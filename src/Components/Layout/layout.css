@@ -1,0 +1,12 @@
+.layout{
+    color: var(--txt-color);
+}
+.layout_content{
+    display: flex;
+    background: var(--second-bg);
+}
+.layout_content_main{
+    padding: 20px;
+    transition : all 0.5s var(--transition-cubic);
+    width : 100%;
+}

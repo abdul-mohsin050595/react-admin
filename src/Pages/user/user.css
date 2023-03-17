@@ -1,0 +1,56 @@
+.users{
+    width: 100%;
+}
+.users_top{
+    padding : 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selectedContainer{
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s var(--transition-cubic);
+}
+.show{
+    display: flex;
+}
+.hide{
+    display: none;
+}
+.user_table{
+    width: 100%;
+    border : 1px solid var(--second-bg);
+    border-radius: 10px;
+    text-align: left;
+    /* padding: 10px; */
+}
+
+.user_table thead {
+    background: var(--second-bg);
+    font-weight: bold;
+}
+.user_table thead tr{
+    border-radius: 10px;
+}
+.user_table tbody tr{
+    cursor: pointer;
+}
+.user_table tbody tr:hover{
+    background: var(--second-bg);
+    /* color : var(--txt-white) */
+}
+.user_table a{
+    color: inherit;
+    text-decoration: none;
+}
+td{
+    padding: 10px;
+}
+td{
+    border-bottom: 2px solid var(--second-bg);
+     /* border-radius: 10px; */
+}
+
+

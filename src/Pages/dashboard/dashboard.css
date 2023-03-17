@@ -1,0 +1,32 @@
+.carts{
+    padding: 10px 0;
+}
+.status_carts{
+    display: flex;
+}
+.status_cart{
+    margin:0 30px 30px 0;
+    background: var(--second-bg);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+.status_cart:hover{
+    background: var(--second-color);
+    color: var(--txt-white);
+}
+.dashboard_Icon{
+    width: 24px;
+    height: 24px;
+}
+.order_chart{
+    width: 300px;
+    height: 300px;
+}

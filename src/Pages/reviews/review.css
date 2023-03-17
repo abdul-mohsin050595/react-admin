@@ -1,0 +1,33 @@
+.reviews_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.review_detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.review_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 10px;
+}
+.comments_field{
+    width: 80%;
+}
+/* .review_item{
+    
+} */
+
+.user_link,
+.product_link{
+    color: inherit;
+    text-decoration: none;
+}
