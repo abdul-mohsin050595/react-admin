@@ -1,9 +1,9 @@
-import { createContext, useContext, useState } from "react"
+import React,{ createContext, useContext, useState } from "react"
 
 const sidebarContext = createContext(null)
 
 export const SidebarProvider = ({ children }) => {
-    const [isSidebarOpen,setIsSidebarOpen] = useState(true)
+    const [isSidebarOpen,setIsSidebarOpen] = useState(false)
 
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen)

@@ -1,34 +1,34 @@
-import React from 'react'
-import { Routes, Route } from "react-router-dom"
-import {
-  Dashboard, Users, Products, Orders, SingleUser, CreateUser,
-  OrderDetail, CreateProduct, UpdateProduct, Reviews, Categories,
-  CatProduct,
-  CategoryDetail,
-  UpdateReview,
-
-} from "../Pages";
+import React, { Suspense } from "react";
+import { Routes, Route } from "react-router-dom";
+import * as Pages from "../Pages";
+import Loading from "./Loading/Loading";
+import NotFound from "./NotFound/NotFound";
 
 function Allroutes() {
   return (
-    <Routes>
-      <Route exact path='/' element={<Dashboard />} />
-      <Route path='orders' element={<Orders />} />
-      <Route path='orders/:orderId' element={<OrderDetail />} />
-      <Route path='products' element={<Products />} />
-      <Route path='products/create' element={<CreateProduct />} />
-      <Route path='products/:productId' element={<UpdateProduct />} />
-      <Route path='customers' element={<Users />} />
-      <Route path='customers/:userId' element={<SingleUser />} />
-      <Route path='customers/create' element={< CreateUser />} />
-      <Route path='reviews' element={<Reviews />} />
-      <Route path='reviews/:reviewId' element={<UpdateReview />} />
-      <Route path='categories' element={<Categories />} />
-      <Route path='categories/products' element={<CatProduct />} />
-      <Route path='categories/:categoryId' element={<CategoryDetail />} />
-      <Route path='/*' element={<h1>Page Not Found</h1>} />
-    </Routes>
-  )
+    <Suspense fallback={<Loading />}>
+      <Routes>
+        <Route exact path="/" element={<Pages.Dashboard />} />
+        <Route path="orders" element={<Pages.Orders />} />
+        <Route path="orders/:orderId" element={<Pages.OrderDetail />} />
+        <Route path="products" element={<Pages.Products />} />
+        <Route path="products/create" element={<Pages.CreateProduct />} />
+        <Route path="products/:productId" element={<Pages.UpdateProduct />} />
+        <Route path="customers" element={<Pages.Users />} />
+        <Route path="customers/:userId" element={<Pages.SingleUser />} />
+        <Route path="customers/create" element={<Pages.CreateUser />} />
+        <Route path="reviews" element={<Pages.Reviews />} />
+        <Route path="reviews/:reviewId" element={<Pages.UpdateReview />} />
+        <Route path="categories" element={<Pages.Categories />} />
+        <Route path="categories/products" element={<Pages.CatProduct />} />
+        <Route
+          path="categories/:categoryId"
+          element={<Pages.CategoryDetail />}
+        />
+        <Route path="/*" element={<NotFound />} />
+      </Routes>
+    </Suspense>
+  );
 }
 
-export default Allroutes
+export default Allroutes;

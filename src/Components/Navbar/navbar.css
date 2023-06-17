@@ -4,7 +4,9 @@
     align-items: center;
     background: var(--main-bg);
     padding: 0 20px;
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0px;
     z-index: 10;
     box-shadow: var(--box-shadow);
     border-radius: 5px;

@@ -15,6 +15,7 @@
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     text-align: center;
+    cursor: pointer;
 }
 
 .card_img_div{
@@ -33,8 +34,14 @@
 
 .product_btn{
     width: 50%;
+    color: var(--main-color);
+    background : transparent;
+    text-decoration: none;
 }
 
 .edit_btn{
     width: 50%;
+    color: var(--main-color);
+    background : transparent;
+    text-decoration: none;
 }

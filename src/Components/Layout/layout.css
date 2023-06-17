@@ -6,7 +6,24 @@
     background: var(--second-bg);
 }
 .layout_content_main{
-    padding: 20px;
+    margin-top: 48px;
+    padding: 10px;
     transition : all 0.5s var(--transition-cubic);
     width : 100%;
+}
+.expand_layout{
+    margin-left: 200px;
+}
+
+.reduce_layout{
+    margin-left: 55px;
+}
+
+@media screen and (max-width : 930px){
+    .expand_layout{
+        margin-left: 0;
+    }
+    .reduce_layout{
+        margin-left: 0;
+    }
 }

@@ -1,3 +1,4 @@
+import React from "react";
 import "./navbar.css"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { IoIosColorPalette } from "react-icons/io"

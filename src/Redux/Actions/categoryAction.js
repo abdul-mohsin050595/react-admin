@@ -4,8 +4,7 @@ import api from "../../Api/api";
 export const getCategories = () => async(dispatch) => {
     try {
         dispatch({type : actionTypes.GET_CATEGORY_REQUEST})
-        const config = {headers : {"Content-Type": "application/json"}};
-        const {data} = await api.get("/categories",config)
+        const {data} = await api.get("/categories")
         dispatch({type : actionTypes.GET_CATEGORY_SUCCESS, payload : data})
     } catch (error) {
         dispatch({type : actionTypes.GET_CATEGORY_FAIL, payload : error.name})
@@ -17,7 +16,6 @@ export const getProductsByCategory = (category) => async(dispatch) => {
         dispatch({type : actionTypes.CATEGORY_PRODUCT_REQUEST})
         const {data} = await api.get(`/products?category=${category}`)
         dispatch({type : actionTypes.CATEGORY_PRODUCT_SUCCESS,payload: data})
-
     } catch (error) {
         dispatch({type: actionTypes.CATEGORY_PRODUCT_FAIL,payload: error.name})
     }

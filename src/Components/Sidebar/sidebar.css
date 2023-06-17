@@ -1,10 +1,14 @@
 .sidebar_wrapper {
-    height: calc(100vh - 48px);
+    /* height: calc(100vh - 48px); */
+    height: 100vh;
     background: var(--main-bg);
     box-shadow: var(--box-shadow);
-    /* position: fixed; */
+    position: fixed;
+    left: 0;
     border-radius: 5px;
     transition: width 0.5s var(--transition-cubic);
+    margin-top: 48px;
+    z-index: 10;
 }
 
 .expand {
@@ -65,4 +69,19 @@
 
 .hide_sidebar_name {
     visibility: hidden;
+}
+@media screen and (max-width: 930px){
+    .expand {
+        left: 0 !important;
+    }
+    .sidebar_wrapper{
+        left: -200px;
+    }
+    .reduce{
+        width: -200px;
+        transition: all 0.3s ease 0s;
+    }
+    .hide_sidebar_name {
+        visibility: visible;
+    }
 }

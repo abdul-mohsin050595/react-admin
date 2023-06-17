@@ -5,8 +5,8 @@ import api from "../../Api/api";
 const getusers = () => async (dispatch) => {
     try {
         dispatch({type : actionTypes.GET_USERS_REQUEST})
-        const config = {headers : {"Content-Type": "application/json"}}
-        const {data} = await api.get("/users",config)
+        // const config = {headers : {"Content-type": "application/json; charset=UTF-8"}}
+        const {data} = await api.get("/users")
         dispatch({type : actionTypes.GET_USERS_SUCCESS, payload : data})
     } catch (error) {
         dispatch({type : actionTypes.GET_USERS_FAILURE , payload : error.message})
@@ -27,7 +27,7 @@ const getusers = () => async (dispatch) => {
     try{
         dispatch({type : actionTypes.CREATE_USER_REQUEST})
         const config = {headers : {"Content-Type": "application/json"}};
-        const {data} = await api.post("/users",user,config);
+        const {data} = await api.post("/users",config,user);
         dispatch({type: actionTypes.CREATE_USER_SUCCESS,payload : data})
     }catch(error){
         dispatch({type: actionTypes.CREATE_USER_FAIL,payload : error.name})
@@ -38,7 +38,7 @@ const updateUser = (user,id) => async (dispatch) => {
     try{
         dispatch({type : actionTypes.UPDATE_USER_REQUEST})
         const config = {headers : {"Content-Type": "application/json"}};
-        const {data} = await api.put(`/users/${id}`,user,config);
+        const {data} = await api.put(`/users/${id}`,config,user);
         dispatch({type: actionTypes.UPDATE_USER_SUCCESS,payload : data})
     }catch(error){
         dispatch({type: actionTypes.UPDATE_USER_FAIL,payload : error.name})

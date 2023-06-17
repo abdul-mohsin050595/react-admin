@@ -1,6 +1,7 @@
 import { MdDashboard, MdShoppingCart, MdBookmark, MdComment } from "react-icons/md"
 import { AiFillShopping } from "react-icons/ai"
-import { FiUsers } from "react-icons/fi"
+import { FiUsers } from "react-icons/fi";
+import React from "react"
 import { IconContext } from "react-icons";
 import "../CSS/icon.css"
 

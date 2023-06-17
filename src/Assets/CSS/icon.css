@@ -1,9 +1,9 @@
-.icons{
-    color: var(--txt-color);
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
+.icons {
+  color: var(--txt-color);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
-.icons:hover{
-    color: var(--txt-white);
+.icons:hover {
+  color: var(--txt-white);
 }

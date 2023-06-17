@@ -6,12 +6,12 @@ import { SingleUser } from "./user";
 import { CreateUser } from "./user";
 import { OrderDetail } from "./orders";
 import { CreateProduct, UpdateProduct } from "./products";
-import { Reviews ,UpdateReview} from "./reviews";
+import { Reviews, UpdateReview } from "./reviews";
 import { Categories, CatProduct, CategoryDetail } from "./categories"
 
 export {
     Dashboard, Users, Products, Orders, SingleUser,
     CreateUser, OrderDetail, CreateProduct, UpdateProduct
-    , Reviews,UpdateReview,
-     Categories, CatProduct, CategoryDetail
+    , Reviews, UpdateReview,
+    Categories, CatProduct, CategoryDetail
 }

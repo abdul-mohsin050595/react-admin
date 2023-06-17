@@ -1,6 +1,8 @@
+import axios from "axios";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-
-const PendingOrders = ({ orders }) => {
+// { orders }
+const PendingOrders = ({orders}) => {
     const pendingOrders = orders && orders.filter(order => order.status === "pending")
     const navigate = useNavigate()
 
@@ -12,10 +14,13 @@ const PendingOrders = ({ orders }) => {
         navigate(`/orders/${id}`)
     }
 
+    if(orders.length === 0){
+        return (<h4>Loading</h4>)
+    }
     return (
-        <div>
+        <div className="pending_orders item">
             <h4>Pending Orders({pendingOrders.length})</h4>
-            <table>
+            <table className="pending_orders_table">
                 <thead>
                     <tr>
                         <td>Date</td>

@@ -1,3 +1,4 @@
+import React from "react";
 import "./sidebar.css"
 import { sidebars } from "../../Assets/Data/sidebar_routes"
 import { NavLink } from "react-router-dom"

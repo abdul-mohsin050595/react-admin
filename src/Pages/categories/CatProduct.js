@@ -1,29 +1,31 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate, useSearchParams } from 'react-router-dom';
+import { Loading } from '../../Components';
+import { getProductsByCategory } from '../../Redux/Actions/categoryAction';
 
 function CatProduct() {
-    const { catProducts, loading } = useSelector(state => state.catProducts)
+    const { catProducts, loading,error } = useSelector(state => state.catProducts)
     const navigate = useNavigate()
-
+    const dispatch = useDispatch()
+    const [searchParams,setSearchParams] = useSearchParams()
+    
     const navigateToUpdate = (id) => {
         navigate(`/products/${id}`)
     }
-    if (loading) {
-        return (
-            <section>
-                <h1>Loading...</h1>
-            </section>
-        )
-    } else if (catProducts.length === 0) {
-        return <section>No Products Available</section>
-    }
+    
+    useEffect(() => {
+        dispatch(getProductsByCategory(searchParams.get("filter")))
+    }, [ dispatch,searchParams])
+
+    if (loading) return <Loading /> 
+    if (catProducts.length === 0) return <section>No Products Available</section>
+    if(error) return <section>{error}</section>
     return (
         <section>
             <div className='cards'>
                 {
                     catProducts.map(products => {
-                        console.log(products)
                         return (
                             <div key={products.id}
                                 className='card'

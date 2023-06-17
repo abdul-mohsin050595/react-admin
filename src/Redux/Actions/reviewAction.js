@@ -4,11 +4,11 @@ import api from "../../Api/api";
 export const getReviews = () => async (dispatch) => {
     try {
         dispatch({type : actionTypes.GET_REVIEWS_REQUEST})
-        const config = {headers : {"Content-Type": "application/json"}}
-        const {data} = await api.get(`/reviews`,config)
+        // const config = {headers : {"Content-Type": "application/json"}}
+        const {data} = await api.get(`/reviews`)
         dispatch({type : actionTypes.GET_REVIEWS_SUCCESS , payload : data})
     } catch (error) {
-        dispatch({type : actionTypes.GET_REVIEWS_FAIL , payload : error.name})
+        dispatch({type : actionTypes.GET_REVIEWS_FAIL , payload : error.message})
     }
 }
 
@@ -26,7 +26,7 @@ export const updateReview = (id,review) => async(dispatch) => {
     try {
         dispatch({type : actionTypes.UPDATE_REVIEW_REQUEST})
         const config = {"Content-Type":"application/json"}
-        const {data} = await api.put(`/reviews/${id}`,review,config)
+        const {data} = await api.put(`/reviews/${id}`,config,review)
         dispatch({type : actionTypes.UPDATE_REVIEW_SUCCESS , payload : data})
     } catch (error) {
         dispatch({type : actionTypes.UPDATE_REVIEW_FAIL , payload : error.name})

@@ -1,7 +1,11 @@
 import React from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
-import { filterOrders } from './filerOrderData';
+import { filterOrders } from './filterOrderData';
+const options = {
+  responsive: true,
+  aspectRatio: 2,
+};
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 function OrderChart({ orders }) {
@@ -26,7 +30,16 @@ function OrderChart({ orders }) {
     ],
   };
 
-  return <Doughnut data={data} />;
+  return (
+      orders.length === 0 ? (
+        <h4>Loading</h4>
+      ):(
+        <div className='order_chart item'>
+          <h4 className='order_chart_heading'>Total Orders in %</h4>
+          <Doughnut data={data} options={options} aria-label="orders chart"/>
+        </div>
+      )
+  );
 }
 
 export default OrderChart

@@ -1,5 +1,5 @@
-import React from 'react'
-import UserForm from './UserForm'
+import React from 'react';
+import UserForm from './UserForm';
 import { createUser } from '../../Redux/Actions/userAction';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from "react-router-dom";
@@ -24,7 +24,7 @@ function CreateUser() {
   const handleUserData = (user) => {
     const timeString = {
       created_at: new Date().toJSON(),
-      Updated_at: ""
+      Updated_at: new Date().toJSON()
     }
     dispatch(createUser({ ...user, ...timeString }))
     navigate("/customers")

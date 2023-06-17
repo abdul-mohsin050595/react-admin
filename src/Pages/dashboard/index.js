@@ -1,4 +1,6 @@
-import Dashboard from "./Dashboard"
+import * as React from "react";
 
-export {Dashboard}
+const Dashboard = React.lazy(() => import("./Dashboard"))
+
+export { Dashboard }
 

@@ -1,0 +1,76 @@
+.selectedContainer {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s var(--transition-cubic);
+  position: absolute;
+  top: 0px;
+  z-index: 10;
+  padding: 0 10px;
+  margin: 0 10px;
+  background: var(--main-bg);
+}
+.delete_all_btn {
+  background: var(--main-color-red);
+  padding: 10px;
+  margin-right: 10px;
+}
+.show {
+  display: flex;
+}
+.hide {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border-radius: 10px;
+  text-align: left;
+}
+
+table thead {
+  background: var(--second-bg);
+  font-weight: bold;
+}
+
+table thead tr {
+  border-radius: 10px;
+}
+table thead tr td,
+table tbody tr {
+  cursor: pointer;
+}
+table tbody tr:hover {
+  background: var(--second-bg);
+  /* color : var(--txt-white) */
+}
+
+td {
+  padding: 10px;
+}
+td {
+  border-bottom: 2px solid var(--second-bg);
+  /* border-radius: 10px; */
+}
+table {
+  width: 100%;
+  padding: 10px;
+}
+table thead a {
+  color: inherit;
+  text-decoration: none;
+}
+.head_contaner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.asc {
+  transform: rotate(0deg);
+}
+.desc {
+  transform: rotate(-180deg);
+}

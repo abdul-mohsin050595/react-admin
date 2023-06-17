@@ -361,93 +361,59 @@
   ],
   "users": [
     {
-      "id": 1,
-      "name": "John Smith",
-      "email": "johnsmith@gmail.com",
-      "phone": "+1-202-555-0171",
-      "password": "1234568",
+      "id": 6,
+      "name": "Isabella Hernandez",
+      "email": "isabellahernandez@hotmail.com",
+      "phone": "97202-555-0176",
       "address": {
-        "street": "123 Main St",
-        "city": "New York",
-        "state": "NY",
-        "zip": "10001"
+        "street": "1415 Birch St",
+        "city": "Philadelphia",
+        "state": "PA",
+        "zip": "19019"
       },
-      "created_at": "2022-02-01T10:00:00Z",
-      "updated_at": "2022-02-02T10:00:00Z"
+      "created_at": "2022-03-06T10:00:00Z",
+      "updated_at": "2023-03-30T14:15:39.308Z"
     },
     {
-      "id": 2,
-      "name": "Emma Johnson",
-      "email": "emmajohnson@hotmail.com",
-      "phone": "+1-202-555-0172",
-      "password": "1234568",
+      "id": 7,
+      "name": "William Robinson",
+      "email": "williamrobinson@yahoo.com",
+      "phone": "+1-202-555-0177",
       "address": {
-        "street": "456 Elm St",
-        "city": "Los Angeles",
-        "state": "CA",
-        "zip": "90001"
-      },
-      "created_at": "2022-02-02T10:00:00Z",
-      "updated_at": "2022-02-03T10:00:00Z"
-    },
-    {
-      "id": 3,
-      "name": "Michael Lee",
-      "email": "michaellee@yahoo.com",
-      "phone": "+1-202-555-0173",
-      "password": "1234568",
-      "address": {
-        "street": "789 Oak St",
-        "city": "Chicago",
-        "state": "IL",
-        "zip": "60007"
-      },
-      "created_at": "2022-02-03T10:00:00Z",
-      "updated_at": "2022-02-04T10:00:00Z"
-    },
-    {
-      "id": 4,
-      "name": "Sophia Kim",
-      "email": "sophiakim@gmail.com",
-      "phone": "+1-202-555-0174",
-      "password": "1234568",
-      "address": {
-        "street": "1011 Pine St",
-        "city": "Houston",
+        "street": "1617 Maple St",
+        "city": "San Antonio",
         "state": "TX",
-        "zip": "77002"
+        "zip": "78205"
       },
-      "created_at": "2022-02-04T10:00:00Z",
-      "updated_at": "2022-02-05T10:00:00Z"
+      "created_at": "2022-03-07T10:00:00Z",
+      "updated_at": "2022-04-08T10:00:00Z"
     },
     {
-      "id": 5,
-      "name": "David Garcia",
-      "email": "davidgarcia@gmail.com",
-      "phone": "+1-202-555-0175",
-      "password": "1234568",
+      "id": 8,
+      "name": "Olivia Smith",
+      "email": "oliviasmith@gmail.com",
+      "phone": "+1-202-555-0178",
       "address": {
-        "street": "1213 Cedar St",
-        "city": "Phoenix",
-        "state": "AZ",
-        "zip": "85001"
+        "street": "1819 Oak St",
+        "city": "San Diego",
+        "state": "CA",
+        "zip": "92101"
       },
-      "created_at": "2022-02-05T10:00:00Z",
-      "updated_at": "2022-02-06T10:00:00Z"
+      "created_at": "2022-01-08T10:00:00Z",
+      "updated_at": "2022-02-09T10:00:00Z"
     },
     {
       "id": 9,
       "name": "Daniel Martinez",
       "email": "danielmartinez@hotmail.com",
       "phone": "+1-202-555-0179",
-      "password": "1234568",
       "address": {
         "street": "2021 Cedar St",
         "city": "San Jose",
         "state": "CA",
         "zip": "95113"
       },
-      "created_at": "2022-02-09T10:00:00Z",
+      "created_at": "2022-01-09T10:00:00Z",
       "updated_at": "2022-02-10T10:00:00Z"
     },
     {
@@ -455,7 +421,6 @@
       "name": "Ava Johnson",
       "email": "avajohnson@yahoo.com",
       "phone": "+1-202-555-0180",
-      "password": "1234568",
       "address": {
         "street": "2223 Maple St",
         "city": "Dallas",
@@ -470,29 +435,41 @@
       "name": "Ethan Davis",
       "email": "ethandavis@hotmail.com",
       "phone": "+1-202-555-0181",
-      "password": "1234568",
       "address": {
         "street": "2425 Oak St",
         "city": "Austin",
         "state": "TX",
         "zip": "78701"
       },
-      "created_at": "2022-02-11T10:00:00Z",
+      "created_at": "2022-05-11T10:00:00Z",
       "updated_at": "2022-02-12T10:00:00Z"
+    },
+    {
+      "id": 12,
+      "name": "Mia Garcia",
+      "email": "miagarcia@gmail.com",
+      "phone": "+1-202-555-0182",
+      "address": {
+        "street": "2627 Cedar St",
+        "city": "Fort Worth",
+        "state": "TX",
+        "zip": "76102"
+      },
+      "created_at": "2022-05-12T10:00:00Z",
+      "updated_at": "2022-02-13T10:00:00Z"
     },
     {
       "id": 13,
       "name": "Alexander Johnson",
       "email": "alexanderjohnson@yahoo.com",
       "phone": "+1-202-555-0183",
-      "password": "1234568",
       "address": {
         "street": "2829 Maple St",
         "city": "San Francisco",
         "state": "CA",
         "zip": "94102"
       },
-      "created_at": "2022-02-13T10:00:00Z",
+      "created_at": "2022-06-13T10:00:00Z",
       "updated_at": "2022-02-14T10:00:00Z"
     },
     {
@@ -500,14 +477,13 @@
       "name": "Sophia Hernandez",
       "email": "sophiahernandez@hotmail.com",
       "phone": "+1-202-555-0184",
-      "password": 1234568,
       "address": {
         "street": "3031 Oak St",
         "city": "Los Angeles",
         "state": "CA",
         "zip": "90012"
       },
-      "created_at": "2022-02-14T10:00:00Z",
+      "created_at": "2022-06-14T10:00:00Z",
       "updated_at": "2022-02-15T10:00:00Z"
     },
     {
@@ -515,14 +491,13 @@
       "name": "Benjamin Perez",
       "email": "benjaminperez@yahoo.com",
       "phone": "+1-202-555-0185",
-      "password": 1234568,
       "address": {
         "street": "3233 Cedar St",
         "city": "Sacramento",
         "state": "CA",
         "zip": "95814"
       },
-      "created_at": "2022-02-15T10:00:00Z",
+      "created_at": "2022-07-15T10:00:00Z",
       "updated_at": "2022-02-16T10:00:00Z"
     },
     {
@@ -530,14 +505,13 @@
       "name": "Charlotte Mitchell",
       "email": "charlottemitchell@gmail.com",
       "phone": "+1-202-555-0186",
-      "password": 1234568,
       "address": {
         "street": "3435 Maple St",
         "city": "Seattle",
         "state": "WA",
         "zip": "98101"
       },
-      "created_at": "2022-02-16T10:00:00Z",
+      "created_at": "2022-08-16T10:00:00Z",
       "updated_at": "2022-02-17T10:00:00Z"
     },
     {
@@ -545,14 +519,13 @@
       "name": "Michael King",
       "email": "michaelking@hotmail.com",
       "phone": "+1-202-555-0187",
-      "password": 1234568,
       "address": {
         "street": "3637 Oak St",
         "city": "Portland",
         "state": "OR",
         "zip": "97204"
       },
-      "created_at": "2022-02-17T10:00:00Z",
+      "created_at": "2022-08-17T10:00:00Z",
       "updated_at": "2022-02-18T10:00:00Z"
     },
     {
@@ -560,14 +533,13 @@
       "name": "Emily Lee",
       "email": "emilylee@yahoo.com",
       "phone": "+1-202-555-0188",
-      "password": 1234568,
       "address": {
         "street": "3839 Cedar St",
         "city": "Vancouver",
         "state": "BC",
         "zip": "V6B 6G1"
       },
-      "created_at": "2022-02-18T10:00:00Z",
+      "created_at": "2022-09-18T10:00:00Z",
       "updated_at": "2022-02-19T10:00:00Z"
     },
     {
@@ -575,14 +547,13 @@
       "name": "Jacob Walker",
       "email": "jacobwalker@hotmail.com",
       "phone": "+1-202-555-0189",
-      "password": 1234568,
       "address": {
         "street": "4041 Maple St",
         "city": "Calgary",
         "state": "AB",
         "zip": "T2P 0H8"
       },
-      "created_at": "2022-02-19T10:00:00Z",
+      "created_at": "2022-10-19T10:00:00Z",
       "updated_at": "2022-02-20T10:00:00Z"
     },
     {
@@ -590,14 +561,13 @@
       "name": "Victoria Scott",
       "email": "victoriascott@gmail.com",
       "phone": "+1-202-555-0190",
-      "password": 1234568,
       "address": {
         "street": "4243 Oak St",
         "city": "Edmonton",
         "state": "AB",
         "zip": "T5J 1B4"
       },
-      "created_at": "2022-02-20T10:00:00Z",
+      "created_at": "2022-11-20T10:00:00Z",
       "updated_at": "2022-02-21T10:00:00Z"
     }
   ],
@@ -625,7 +595,7 @@
         "state": "NY",
         "zip": "10001"
       },
-      "created_at": "2022-02-01T10:00:00Z",
+      "created_at": "2022-01-01T10:00:00Z",
       "updated_at": "2022-02-01T12:00:00Z"
     },
     {
@@ -651,13 +621,13 @@
         "state": "CA",
         "zip": "90012"
       },
-      "created_at": "2022-02-02T10:00:00Z",
+      "created_at": "2022-01-01T10:00:00Z",
       "updated_at": "2023-03-12T11:41:26.427Z"
     },
     {
       "id": 3,
       "user_id": 3,
-      "status": "cancelled",
+      "status": "delivered",
       "total": 78.5,
       "items": [
         {
@@ -678,12 +648,12 @@
         "zip": "94102"
       },
       "created_at": "2022-02-03T10:00:00Z",
-      "updated_at": "2023-03-11T17:31:37.534Z"
+      "updated_at": "2023-03-19T13:00:41.155Z"
     },
     {
       "id": 4,
       "user_id": 4,
-      "status": "cancelled",
+      "status": "delivered",
       "total": 50.5,
       "items": [
         {
@@ -704,7 +674,7 @@
         "zip": "60601"
       },
       "created_at": "2022-02-04T10:00:00Z",
-      "updated_at": "2022-02-04T12:00:00Z"
+      "updated_at": "2023-03-19T13:01:03.814Z"
     },
     {
       "id": 5,
@@ -729,13 +699,13 @@
         "state": "TX",
         "zip": "77002"
       },
-      "created_at": "2022-02-05T10:00:00Z",
-      "updated_at": "2022-02-05T12:00:00Z"
+      "created_at": "2022-03-05T10:00:00Z",
+      "updated_at": "2022-03-06T12:00:00Z"
     },
     {
       "id": 6,
       "user_id": 6,
-      "status": "pending",
+      "status": "delivered",
       "total": 31.99,
       "items": [
         {
@@ -755,8 +725,8 @@
         "state": "PA",
         "zip": "19103"
       },
-      "created_at": "2022-02-06T10:00:00Z",
-      "updated_at": "2022-02-06T12:00:00Z"
+      "created_at": "2022-04-06T10:00:00Z",
+      "updated_at": "2023-04-19T13:02:24.844Z"
     },
     {
       "id": 7,
@@ -781,8 +751,8 @@
         "state": "MA",
         "zip": "02109"
       },
-      "created_at": "2022-02-07T10:00:00Z",
-      "updated_at": "2023-03-11T17:32:00.094Z"
+      "created_at": "2022-05-07T10:00:00Z",
+      "updated_at": "2023-05-11T17:32:00.094Z"
     },
     {
       "id": 8,
@@ -807,13 +777,13 @@
         "state": "GA",
         "zip": "30303"
       },
-      "created_at": "2022-02-08T10:00:00Z",
-      "updated_at": "2022-02-08T12:00:00Z"
+      "created_at": "2022-06-08T10:00:00Z",
+      "updated_at": "2022-06-08T12:00:00Z"
     },
     {
       "id": 9,
       "user_id": 9,
-      "status": "cancelled",
+      "status": "delivered",
       "total": 62,
       "items": [
         {
@@ -838,8 +808,8 @@
         "state": "NY",
         "zip": "10021"
       },
-      "created_at": "2022-02-09T10:00:00Z",
-      "updated_at": "2022-02-09T12:00:00Z"
+      "created_at": "2022-07-09T10:00:00Z",
+      "updated_at": "2023-07-19T13:01:43.793Z"
     },
     {
       "id": 10,
@@ -869,8 +839,8 @@
         "state": "CA",
         "zip": "94103"
       },
-      "created_at": "2022-02-10T10:00:00Z",
-      "updated_at": "2023-03-11T17:32:15.469Z"
+      "created_at": "2022-08-10T10:00:00Z",
+      "updated_at": "2023-08-11T17:32:15.469Z"
     },
     {
       "id": 11,
@@ -890,8 +860,8 @@
         "state": "WA",
         "zip": "98101"
       },
-      "created_at": "2022-02-11T10:00:00Z",
-      "updated_at": "2022-02-11T12:00:00Z"
+      "created_at": "2022-09-11T10:00:00Z",
+      "updated_at": "2022-09-11T12:00:00Z"
     },
     {
       "id": 12,
@@ -968,8 +938,8 @@
         "state": "CA",
         "zip": "94111"
       },
-      "created_at": "2022-02-14T10:00:00Z",
-      "updated_at": "2022-02-14T12:00:00Z"
+      "created_at": "2022-10-14T10:00:00Z",
+      "updated_at": "2022-10-14T12:00:00Z"
     },
     {
       "id": 15,
@@ -1000,7 +970,7 @@
     {
       "id": 16,
       "user_id": 16,
-      "status": "cancelled",
+      "status": "delivered",
       "total": 32.97,
       "items": [
         {
@@ -1020,8 +990,8 @@
         "state": "MA",
         "zip": "02108"
       },
-      "created_at": "2022-02-16T10:00:00Z",
-      "updated_at": "2022-02-16T12:00:00Z"
+      "created_at": "2022-11-16T10:00:00Z",
+      "updated_at": "2023-11-19T13:01:29.990Z"
     },
     {
       "id": 17,
@@ -1072,8 +1042,8 @@
         "state": "FL",
         "zip": "33131"
       },
-      "created_at": "2022-02-18T10:00:00Z",
-      "updated_at": "2022-02-18T12:00:00Z"
+      "created_at": "2022-11-18T10:00:00Z",
+      "updated_at": "2022-11-18T12:00:00Z"
     },
     {
       "id": 19,
@@ -1099,7 +1069,7 @@
     {
       "id": 20,
       "user_id": 20,
-      "status": "cancelled",
+      "status": "delivered",
       "total": 38.97,
       "items": [
         {
@@ -1119,8 +1089,8 @@
         "state": "CA",
         "zip": "90012"
       },
-      "created_at": "2022-02-20T10:00:00Z",
-      "updated_at": "2022-02-20T12:00:00Z"
+      "created_at": "2022-10-20T10:00:00Z",
+      "updated_at": "2023-10-19T13:01:17.699Z"
     }
   ],
   "categories": [

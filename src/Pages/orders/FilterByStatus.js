@@ -1,5 +1,5 @@
-
-const FilterByStatus = ({ status, onchange, handlePageClick }) => {
+import React from "react"
+const FilterByStatus = ({ status, onchange, handlePageClick,setSearchParams}) => {
     return (
         <div>
             <select
@@ -7,6 +7,7 @@ const FilterByStatus = ({ status, onchange, handlePageClick }) => {
                 onChange={(e) => {
                     onchange(e.target.value)
                     handlePageClick({ selected: 0 })
+                    setSearchParams({status : e.target.value})
                 }}
             >
                 <option value="">All Status</option>

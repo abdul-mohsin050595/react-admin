@@ -4,8 +4,7 @@ import api from "../../Api/api";
 export const fetchProducts = () => async (dispatch) => {
     try{
         dispatch({type : actionTyes.FETCH_PRODUCTS_REQUEST})
-        const config = {headers : {"Content-Type": "application/json"}};
-        const {data} = await api.get(`/products`,config)
+        const {data} = await api.get(`/products`)
         dispatch({type : actionTyes.FETCH_PRODUCTS_SUCCESS,payload : data})
     }catch(error){
         dispatch({type : actionTyes.FETCH_PRODUCTS_FAILURE,payload : error.name})
@@ -25,7 +24,8 @@ export const productById = (id) => async (dispatch) => {
 export const createProduct = (product) => async (dispatch) => {
     try{
         dispatch({type : actionTyes.CREATE_PRODUCT_REQUEST})
-        const {data} = await api.post(`/products`,product)
+        const config = {headers : {"Content-Type": "application/json"}};
+        const {data} = await api.post(`/products`,config,product)
         dispatch({type : actionTyes.CREATE_PRODUCT_SUCCESS,payload : data})
     }catch(error){
         dispatch({type : actionTyes.CREATE_PRODUCT_FAIL,payload : error.name})
@@ -35,7 +35,8 @@ export const createProduct = (product) => async (dispatch) => {
 export const updateProduct = (product,id) => async (dispatch) => {
     try{
         dispatch({type : actionTyes.UPDATE_PRODUCT_REQUEST})
-        const {data} = await api.put(`/products/${id}`,product)
+        const config = {headers : {"Content-Type": "application/json"}};
+        const {data} = await api.put(`/products/${id}`,config,product)
         dispatch({type : actionTyes.UPDATE_PRODUCT_SUCCESS,payload : data})
     }catch(error){
         dispatch({type : actionTyes.UPDATE_PRODUCT_FAIL,payload : error.name})
@@ -45,7 +46,8 @@ export const updateProduct = (product,id) => async (dispatch) => {
 export const deleteProduct = (id) => async (dispatch) => {
     try{
         dispatch({type : actionTyes.DELETE_PRODUCT_REQUEST})
-        const {data} = await api.delete(`/products/${id}`)
+        const config = {headers : {"Content-Type": "application/json"}};
+        const {data} = await api.delete(`/products/${id}`,config)
         dispatch({type : actionTyes.DELETE_PRODUCT_SUCCESS,payload : data})
     }catch(error){
         dispatch({type : actionTyes.DELETE_PRODUCT_FAIL,payload : error.name})

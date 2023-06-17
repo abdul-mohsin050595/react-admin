@@ -1,30 +1,24 @@
-.orders_top{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+.orders {
+  position: relative;
 }
-.order_info{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+.orders_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
 }
-
-.order_item_table{
-    width : 100%;
-    padding: 10px;
-}
-.order_total_table{
-    width : 100%;
-    padding: 10px;
+.order_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.order_btns{
-    display: flex;
-    padding: 0 20px;
+.order_btns {
+  display: flex;
+  padding: 0 20px;
 }
 
-.order_delete_btn{
-    margin-left: auto;
-    background: red !important;
+.order_delete_btn {
+  margin-left: auto;
+  background: red !important;
 }
