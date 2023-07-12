@@ -1,19 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,600;1,900&family=Rajdhani:wght@500;700&family=Roboto:ital,wght@0,100;0,300;0,700;1,900&display=swap");
+
 body {
   margin: 0;
   /* font-family: 'Lato', sans-serif; */
   /* font-family: 'Open Sans', sans-serif; */
   /* font-family: 'Poppins', sans-serif; */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Rajdhani", "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   letter-spacing: 0.7px;
   background: var(--main-bg);
   font-size: 1.4rem;
+  font-weight: 400;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -24,17 +27,17 @@ code {
   overflow-x: hidden;
 }
 
-html{
+html {
   font-size: 62.5%; /* 10px */
 }
-@media(max-width : 998px){
-  html{
+@media (max-width: 998px) {
+  html {
     font-size: 62.5%; /* 8.8px */
   }
 }
 
-@media(max-width : 998px){
-  html{
+@media (max-width: 998px) {
+  html {
     font-size: 45%; /* 7.2px */
   }
 }
@@ -132,4 +135,3 @@ section {
   padding: 10px;
   height: calc(100vh - 48px - 20px);
 }
-

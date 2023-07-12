@@ -357,6 +357,12 @@
       "brand": "Golden",
       "category": "home-decoration",
       "image_url": "https://i.dummyjson.com/data/products/30/thumbnail.jpg"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "id": 31
     }
   ],
   "users": [
