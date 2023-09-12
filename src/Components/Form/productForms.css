@@ -1,14 +1,3 @@
-.products {
-  width: 100%;
-  position: relative;
-}
-.products_top {
-  height: 40px;
-  margin: 0 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .product_form {
   width: 100%;
   max-width: 500px;
@@ -43,12 +32,7 @@
   height: 120px;
 }
 
-.product_submit_btn {
-  display: flex;
-  justify-content: space-between;
-}
-
-.product_submit_btn .save {
+.product_submit_btn button {
   background-color: var(--main-color);
   color: var(--txt-white);
   padding: 12px 24px;
@@ -59,23 +43,8 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-.product_submit_btn .save:hover {
+.product_submit_btn button:hover {
   background-color: var(--second-color);
-}
-
-.cancle {
-  background-color: var(--main-color-red);
-  color: var(--txt-white);
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.cancle:hover {
-  background-color: var(--second-color-red);
 }
 
 .product_stoke_price {
@@ -93,19 +62,4 @@
 .brand,
 .category {
   margin-bottom: 15px;
-}
-
-.product_form input {
-  margin: 10px 0;
-  width: 100%;
-  height: 30px;
-}
-input[type="text"],
-input[type="number"],
-input[type="url"],
-textarea {
-  outline: none;
-  background: var(--main-bg);
-  color: var(--txt-color);
-  height: 50px;
 }

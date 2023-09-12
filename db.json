@@ -71,30 +71,6 @@
       "image_url": "https://i.dummyjson.com/data/products/6/thumbnail.png"
     },
     {
-      "id": 7,
-      "title": "Samsung Galaxy Book",
-      "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
-      "price": 1499,
-      "discountPercentage": 4.15,
-      "rating": 4.25,
-      "stock": 50,
-      "brand": "Samsung",
-      "category": "laptops",
-      "image_url": "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
-    },
-    {
-      "id": 8,
-      "title": "Microsoft Surface Laptop 4",
-      "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
-      "price": 1499,
-      "discountPercentage": 10.23,
-      "rating": 4.43,
-      "stock": 68,
-      "brand": "Microsoft Surface",
-      "category": "laptops",
-      "image_url": "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
-    },
-    {
       "id": 9,
       "title": "Infinix INBOOK",
       "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
@@ -363,22 +339,98 @@
         "Content-Type": "application/json"
       },
       "id": 31
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "id": 32
     }
   ],
   "users": [
     {
+      "id": 1,
+      "name": "John Smith",
+      "email": "johnsmith@gmail.com",
+      "phone": "+1-202-555-0171",
+      "address": {
+        "street": "123 Main St",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001"
+      },
+      "created_at": "2022-02-01T10:00:00Z",
+      "updated_at": "2022-02-02T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Emma Johnson",
+      "email": "emmajohnson@hotmail.com",
+      "phone": "+1-202-555-0172",
+      "address": {
+        "street": "456 Elm St",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90001"
+      },
+      "created_at": "2022-02-02T10:00:00Z",
+      "updated_at": "2022-02-03T10:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Michael Lee",
+      "email": "michaellee@yahoo.com",
+      "phone": "+1-202-555-0173",
+      "address": {
+        "street": "789 Oak St",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60007"
+      },
+      "created_at": "2022-02-03T10:00:00Z",
+      "updated_at": "2022-02-04T10:00:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Sophia Kim",
+      "email": "sophiakim@gmail.com",
+      "phone": "+1-202-555-0174",
+      "address": {
+        "street": "1011 Pine St",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77002"
+      },
+      "created_at": "2022-02-04T10:00:00Z",
+      "updated_at": "2022-02-05T10:00:00Z"
+    },
+    {
+      "id": 5,
+      "name": "David Garcia",
+      "email": "davidgarcia@gmail.com",
+      "phone": "+1-202-555-0175",
+      "address": {
+        "street": "1213 Cedar St",
+        "city": "Phoenix",
+        "state": "AZ",
+        "zip": "85001"
+      },
+      "created_at": "2022-02-05T10:00:00Z",
+      "updated_at": "2022-02-06T10:00:00Z"
+    },
+    {
       "id": 6,
       "name": "Isabella Hernandez",
       "email": "isabellahernandez@hotmail.com",
-      "phone": "97202-555-0176",
+      "phone": "+1-202-555-0176",
       "address": {
         "street": "1415 Birch St",
         "city": "Philadelphia",
         "state": "PA",
         "zip": "19019"
       },
-      "created_at": "2022-03-06T10:00:00Z",
-      "updated_at": "2023-03-30T14:15:39.308Z"
+      "created_at": "2022-02-06T10:00:00Z",
+      "updated_at": "2022-02-07T10:00:00Z"
     },
     {
       "id": 7,
@@ -391,8 +443,8 @@
         "state": "TX",
         "zip": "78205"
       },
-      "created_at": "2022-03-07T10:00:00Z",
-      "updated_at": "2022-04-08T10:00:00Z"
+      "created_at": "2022-02-07T10:00:00Z",
+      "updated_at": "2022-02-08T10:00:00Z"
     },
     {
       "id": 8,
@@ -578,32 +630,6 @@
     }
   ],
   "orders": [
-    {
-      "id": 1,
-      "user_id": 1,
-      "status": "delivered",
-      "total": 54.98,
-      "items": [
-        {
-          "product_id": 3,
-          "quantity": 1,
-          "price": 19.99
-        },
-        {
-          "product_id": 8,
-          "quantity": 2,
-          "price": 7.5
-        }
-      ],
-      "shipping_address": {
-        "street": "123 Main St",
-        "city": "New York",
-        "state": "NY",
-        "zip": "10001"
-      },
-      "created_at": "2022-01-01T10:00:00Z",
-      "updated_at": "2022-02-01T12:00:00Z"
-    },
     {
       "id": 2,
       "user_id": 2,
@@ -1261,26 +1287,6 @@
         "name": "Michael Lee"
       },
       "status": "rejected"
-    },
-    {
-      "id": 7,
-      "body": "You are an amazing writer!",
-      "productId": 7,
-      "user": {
-        "id": 3,
-        "name": "Michael Lee"
-      },
-      "status": "rejected"
-    },
-    {
-      "id": 8,
-      "body": "What a powerful argument!",
-      "productId": 8,
-      "user": {
-        "id": 4,
-        "name": "Sophia Kim"
-      },
-      "status": "pending"
     },
     {
       "id": 9,

@@ -44,13 +44,13 @@ function AllCaregories() {
                   height="150px"
                 />
               </div>
-              <p>{category.name}</p>
+              <p style={{ fontSize: "18px" }}>{category.name}</p>
               <div className="cards_btns">
                 <button
                   className="product_btn"
                   onClick={() => categoryProductHandler(category.name)}
                 >
-                  products
+                  Products
                 </button>
                 <button
                   className="edit_btn"

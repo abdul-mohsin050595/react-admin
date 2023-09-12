@@ -1,39 +1,31 @@
 import React from "react";
-import ReactPaginate from 'react-paginate';
+import ReactPaginate from "react-paginate";
 import "./pagination.css";
 
-const Pagination = (
-  {
-    handlePageClick,
-    pageCount,
-    perPage,
-    setPerPage,
-    currentItems,
-    setSearchParams
-  }
-) => {
-
+const Pagination = ({
+  handlePageClick,
+  pageCount,
+  perPage,
+  setPerPage,
+  currentItems,
+  setSearchParams,
+}) => {
   return (
-    <div
-      className={`paginate_wrapper`}
-    >
+    <div className={`paginate_wrapper`}>
       <label
         htmlFor="perPage"
-        className={
-          `${currentItems.length === 0 ?
-            "hide_perPage" :
-            "show_perPage"
-          }`
-        }
+        className={`${
+          currentItems.length === 0 ? "hide_perPage" : "show_perPage"
+        }`}
       >
-        per Page
+        Per Page
         <select
           value={perPage}
           id="perPage"
           onChange={(e) => {
-            setPerPage(e.target.value)
-            handlePageClick({ selected: 0 })
-            setSearchParams({ perPage: perPage })
+            setPerPage(e.target.value);
+            handlePageClick({ selected: 0 });
+            setSearchParams({ perPage: perPage });
           }}
         >
           <option value={5}>5</option>
@@ -46,22 +38,22 @@ const Pagination = (
 
       <ReactPaginate
         breakLabel="..."
-        nextLabel=">"
+        nextLabel={"Next"}
         onPageChange={handlePageClick}
         pageRangeDisplayed={5}
         pageCount={pageCount}
-        previousLabel="<"
+        previousLabel={"Prev"}
         renderOnZeroPageCount={null}
-        containerClassName={'paginatContainer'}
-        pageClassName={'pageStyle'}
-        activeClassName={'activePage'}
-        disabledLinkClassName={'disabledLink'}
-        previousClassName={'previousPage'}
+        containerClassName={"paginatContainer"}
+        pageClassName={"pageStyle"}
+        activeClassName={"activePage"}
+        disabledLinkClassName={"disabledLink"}
+        previousClassName={"previousPage"}
         nextClassName={"previousPage"}
         prevPageRel={"prev"}
       />
     </div>
-  )
-}
+  );
+};
 
-export default Pagination
+export default Pagination;

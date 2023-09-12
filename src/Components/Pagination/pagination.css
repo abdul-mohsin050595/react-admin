@@ -1,52 +1,53 @@
-
 .paginate_wrapper {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    align-items: center;
-  }
-  
-  .paginatContainer {
-    display: flex;
-    justify-content: center;
-    /* flex-direction: row; */
-    margin: 20px;
-    align-items: center;
-  }
-  
-  .pageStyle {
-    background: var(--second-bg);
-    color: var(--main-color);
-    padding: 10px 15px;
-    margin: 0 5px;
-    cursor: pointer;
-    border-radius: 50%;
-  }
-  
-  .activePage {
-    background: var(--main-color);
-    color: var(--txt-white);
-  }
-  
-  .disabledLink {
-    color: #fb0b12;
-    cursor: not-allowed;
-  }
-  
-  .previousPage,
-  .nextPage {
-    background: var(--second-bg);
-    color: var(--main-color);
-    padding: 10px 15px;
-    margin: 0 5px;
-    cursor: pointer;
-    border-radius: 50%;
-  }
-  
-  .hide_perPage {
-    display: none;
-  }
-  
-  .show_perPage {
-    display: block;
-  }
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+}
+
+.paginatContainer {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: row; */
+  margin: 20px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.pageStyle {
+  background: var(--second-bg);
+  color: var(--main-color);
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.activePage {
+  background: var(--main-color);
+  color: var(--txt-white);
+}
+
+.disabledLink {
+  color: #fb0b12;
+  cursor: not-allowed;
+}
+
+.previousPage,
+.nextPage {
+  background: var(--second-bg);
+  color: var(--main-color);
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.hide_perPage {
+  display: none;
+}
+
+.show_perPage {
+  display: block;
+  font-size: 14px;
+}

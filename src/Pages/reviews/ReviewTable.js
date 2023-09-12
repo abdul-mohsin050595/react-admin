@@ -4,10 +4,10 @@ import { Chevrin } from "../../Components";
 
 const tableHead = [
   { field: "", name: "Date" },
-  { field: "name", name: "Customer" },
+  { field: "name", name: "user" },
   { field: "productId", name: "productId" },
-  { field: "body", name: "Comments" },
   { field: "", name: "Rating" },
+  { field: "body", name: "Comments" },
   { field: "status", name: "Status" },
 ];
 

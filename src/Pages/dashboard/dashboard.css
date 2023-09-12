@@ -1,92 +1,101 @@
+.page_heading {
+  display: inline-block;
+}
+.page_heading h2 {
+  padding: 10px 0;
+}
 .carts {
-    padding: 10px 0 0 0;
+  padding: 10px 0 0 0;
 }
 
 .status_carts {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 20px;
 }
 
 .status_cart {
-    flex: 4 1 20%;
-    background: var(--second-bg);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    height: 100px;
-    border-radius: 20px;
-    text-decoration: none;
-    color: inherit;
+  flex: 4 1 20%;
+  background: var(--second-bg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .status_cart:hover {
-    background: var(--second-color);
-    color: var(--txt-white);
+  background: var(--second-color);
+  color: var(--txt-white);
 }
 
 .dashboard_Icon {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 .row {
-    display: flex;
-    width: 100%;
-    margin: 20px 0px;
+  display: flex;
+  width: 100%;
+  margin: 20px 0px;
 }
 
 .item {
-    width: 48%;
-    background: var(--second-bg);
-    border-radius: 10px;
-    padding: 10px;
+  width: 48%;
+  background: var(--second-bg);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .order_chart {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .order_chart_heading {
-    margin: 10px 0px;
+  margin: 10px 0px;
 }
 
 .pending_orders {
-    text-align: center;
-    margin-left: 3%;
+  text-align: center;
+  margin-left: 3%;
 }
-
-.sales_chart {}
+.pending_orders_table td {
+  font-size: 14px;
+}
+.sales_chart {
+}
 
 .users_chart {
-    margin-left: 3%;
+  margin-left: 3%;
 }
 
-@media screen and (max-width : 700px) {
-    .status_cart {
-        flex: 4 1 40%;
-    }
+@media screen and (max-width: 700px) {
+  .status_cart {
+    flex: 4 1 40%;
+  }
 
-    .row {
-        flex-direction: column;
-    }
+  .row {
+    flex-direction: column;
+  }
 
-    .item {
-        width: 100%;
-    }
+  .item {
+    width: 100%;
+  }
 
-    .pending_orders {
-        margin-left: 0%;
-        margin-top: 20px;
-    }
+  .pending_orders {
+    margin-left: 0%;
+    margin-top: 20px;
+  }
 
-    .users_chart {
-        margin: 20px 0px 0px 0px;
-    }
+  .users_chart {
+    margin: 20px 0px 0px 0px;
+  }
 }

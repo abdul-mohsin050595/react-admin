@@ -46,7 +46,9 @@ table tbody tr:hover {
   background: var(--second-bg);
   /* color : var(--txt-white) */
 }
-
+table tbody tr td {
+  font-size: 14px;
+}
 td {
   padding: 10px;
 }
@@ -67,6 +69,7 @@ table thead a {
   align-items: center;
   width: 100%;
   height: 100%;
+  font-size: 14px;
 }
 .asc {
   transform: rotate(0deg);

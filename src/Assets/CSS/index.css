@@ -2,17 +2,18 @@
 
 body {
   margin: 0;
-  /* font-family: 'Lato', sans-serif; */
-  /* font-family: 'Open Sans', sans-serif; */
-  /* font-family: 'Poppins', sans-serif; */
-  font-family: "Rajdhani", "Roboto", sans-serif;
+  /* font-family: "Lato", sans-serif; */
+  /* font-family: "Open Sans", sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Rajdhani", "Roboto", sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   letter-spacing: 0.7px;
   background: var(--main-bg);
-  font-size: 1.4rem;
-  font-weight: 400;
+  /* font-size: 1.4rem; */
+  /* font-weight: 400; */
 }
 
 code {
@@ -27,20 +28,6 @@ code {
   overflow-x: hidden;
 }
 
-html {
-  font-size: 62.5%; /* 10px */
-}
-@media (max-width: 998px) {
-  html {
-    font-size: 62.5%; /* 8.8px */
-  }
-}
-
-@media (max-width: 998px) {
-  html {
-    font-size: 45%; /* 7.2px */
-  }
-}
 :root {
   --main-bg: #ffffff;
   --second-bg: #fafafb;
@@ -52,12 +39,14 @@ html {
 
   --main-bg-light: #ffffff;
   --second-bg-light: #fafafb;
-  --txt-color-light: #455560;
+  /* --txt-color-light: #455560; */
+  --txt-color-light: #1d242e;
   --box-shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
   --main-bg-dark: #2d2d2d;
   --second-bg-dark: #202020;
   --txt-color-dark: #bbbbbb;
+  /* --txt-color-dark: #ffffff; */
   --box-shadow-dark: rgba(0, 0, 0, 0.2) 0px 5px 10px;
 
   --main-color-blue: #349eff;

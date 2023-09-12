@@ -1,87 +1,90 @@
 .sidebar_wrapper {
-    /* height: calc(100vh - 48px); */
-    height: 100vh;
-    background: var(--main-bg);
-    box-shadow: var(--box-shadow);
-    position: fixed;
-    left: 0;
-    border-radius: 5px;
-    transition: width 0.5s var(--transition-cubic);
-    margin-top: 48px;
-    z-index: 10;
+  /* height: calc(100vh - 48px); */
+  height: 100vh;
+  background: var(--main-bg);
+  box-shadow: var(--box-shadow);
+  position: fixed;
+  left: 0;
+  border-radius: 5px;
+  transition: width 0.5s var(--transition-cubic);
+  margin-top: 48px;
+  z-index: 10;
 }
 
 .expand {
-    width: 200px;
+  width: 200px;
 }
 
 .reduce {
-    width: 55px;
+  width: 55px;
 }
 
 .sidebar {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .sidebar_item {
-    list-style: none;
-    margin: 10px 0;
+  list-style: none;
+  margin: 10px 0;
 }
 
 .sidebar_item:hover {
-    color: var(--txt-white);
-    background: var(--second-color);
-    /* border-left: 3px solid var(--txt-white); */
+  color: var(--txt-white);
+  background: var(--second-color);
+  /* border-left: 3px solid var(--txt-white); */
 }
 
 .sidebar_link {
-    text-decoration: none;
-    font-weight: normal;
-    color: inherit;
-    display: flex;
-    padding-left: 20px;
-    align-Items: center;
-    height: 36px;
-    width: 100%;
+  text-decoration: none;
+  font-weight: normal;
+  color: inherit;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  height: 36px;
+  width: 100%;
 }
 
 .sidebar_link .activeLink {
-    border-left: 3px solid var(--txt-white);
-    font-weight: bold;
-    background: var(--main-color);
-    color: var(--txt-white)
+  border-left: 3px solid var(--txt-white);
+  font-weight: bold;
+  background: var(--main-color);
+  color: var(--txt-white);
 }
 
 .sidebar_icon {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 .sidebar_item:hover .icons,
 .icons {
-    color: var(--txt-white)
+  color: var(--txt-white);
 }
 
 .sidebar_name {
-    transition: color 0.3s ease 0s;
-    visibility: visible;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
 }
 
 .hide_sidebar_name {
-    visibility: hidden;
+  visibility: hidden;
 }
-@media screen and (max-width: 930px){
-    .expand {
-        left: 0 !important;
-    }
-    .sidebar_wrapper{
-        left: -200px;
-    }
-    .reduce{
-        width: -200px;
-        transition: all 0.3s ease 0s;
-    }
-    .hide_sidebar_name {
-        visibility: visible;
-    }
+@media screen and (max-width: 930px) {
+  .expand {
+    left: 0 !important;
+  }
+  .sidebar_wrapper {
+    left: -200px;
+  }
+  .reduce {
+    width: -200px;
+    transition: all 0.3s ease 0s;
+  }
+  .hide_sidebar_name {
+    visibility: visible;
+  }
 }

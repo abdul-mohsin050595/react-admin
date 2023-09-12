@@ -1,49 +1,59 @@
-.navbar_wrapper{
-    display: flex;
-    height : 48px;
-    align-items: center;
-    background: var(--main-bg);
-    padding: 0 20px;
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    z-index: 10;
-    box-shadow: var(--box-shadow);
-    border-radius: 5px;
+.navbar_wrapper {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  background: var(--main-bg);
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 10;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
 }
 
 .navbar_theme_icon:hover,
 .navbar_theme_icon:hover .icons {
-    background: var(--second-color);
-    color: var(--txt-white);
-    cursor: pointer;
-    border-radius: 50%;
+  background: var(--second-color);
+  color: var(--txt-white);
+  cursor: pointer;
+  border-radius: 50%;
 }
-.navbar_menu_icon{
-    border-radius: 50%;
+.navbar_menu_icon {
+  border-radius: 50%;
 }
 .navbar_menu_icon:hover,
-.navbar_menu_icon:hover .icons{
-    background: var(--second-color);
-    color: var(--txt-white);
-    cursor: pointer;
+.navbar_menu_icon:hover .icons {
+  background: var(--second-color);
+  color: var(--txt-white);
+  cursor: pointer;
 }
-.menu_icon{
-    padding: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar_logo{
-    margin-left: auto;
+.menu_icon {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar_profile{
-    margin-left: auto;
+.navbar_logo {
+  margin-left: auto;
+  font-size: 20px;
 }
 
-.navbar_theme_icon{
-    margin-left: 20px;
-    border-radius: 50%;
+.navbar_profile {
+  margin-left: auto;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.user_image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.navbar_theme_icon {
+  margin-left: 20px;
+  border-radius: 50%;
 }
